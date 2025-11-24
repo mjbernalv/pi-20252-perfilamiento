@@ -62,9 +62,9 @@ def evaluate_model(name, model, X, y, ks = (1, 2, 3, 5), average = "macro", plot
         cm_df = pd.DataFrame(cm, index = np.unique(y), columns = np.unique(y))
         plt.figure(figsize = (7, 5))
         sns.heatmap(cm_df, annot = True, fmt = "d", cmap = "Blues")
-        plt.ylabel("True")
-        plt.xlabel("Predicted")
-        plt.title(f"Confusion Matrix - {name}")
+        plt.ylabel("Real")
+        plt.xlabel("Predicho")
+        plt.title(f"Matriz de confusión - {name}", fontweight = "bold")
         plt.show()
 
     return results
