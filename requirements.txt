@@ -8,3 +8,4 @@ pyspark==4.0.1
 boto3==1.41.2
 dotenv==0.9.9
 findspark==2.0.1
+streamlit-1.51.0
